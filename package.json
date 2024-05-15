@@ -1,0 +1,22 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Simple calculator with React + Vite for testing purposes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/XavierLopez25/Calculator.git"
+  },
+  "keywords": [
+    "Testing"
+  ],
+  "author": "XavierLopez25",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XavierLopez25/Calculator/issues"
+  },
+  "homepage": "https://github.com/XavierLopez25/Calculator#readme"
+}
