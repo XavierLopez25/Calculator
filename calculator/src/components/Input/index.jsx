@@ -1,19 +1,20 @@
+// src/Input.jsx
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Input = ({ label, labelId, value, onChange, disabled, type = 'text' }) => {
+const Input = ({ value, onChange, disabled, className }) => {
   return (
-    <div>
-      {label && <label htmlFor={labelId}>{label}</label>}
-      <input
-        id={labelId}
-        type={type}
-        value={value}
-        onChange={onChange}
-        disabled={disabled}
-        readOnly={!onChange}
-      />
+    <div className={className}>
+      <input type="text" value={value} onChange={onChange} disabled={disabled} />
     </div>
   );
+};
+
+Input.propTypes = {
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  disabled: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 export default Input;
