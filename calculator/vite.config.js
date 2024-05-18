@@ -18,4 +18,9 @@ export default defineConfig({
     reportsDirectory: './coverage',
     reporter: ['text', 'html'],
   },
+  esbuild: {
+    loader: 'jsx',
+    include: /src\/.*\.jsx?$/,
+    exclude: [],
+  },
 });
