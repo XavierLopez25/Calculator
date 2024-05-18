@@ -1,3 +1,5 @@
+import '@testing-library/jest-dom';
+
 import { afterEach } from 'vitest';
 
 async function importTestDependencies() {
